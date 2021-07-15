@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Countdown</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <div class="basicInfo">
+    <div>
+    <div class="title">
+      <h1>Tell us the title of your work</h1> <br>
+      <input id="title" type="text"> 
+      <div class="btn"><button class="get">Get</button></div>
+    </div>
+    <div class="detail">
+      <h1>Wanna add some more details?</h1> <br>
+      <input id="detail" type="text"> 
+      <div class="btn"><button class="set">Set</button></div>
+    </div>
+    <div class="time">
+      <h1>Alright, now tell us the deadline</h1> <br>
+      <input id="date" type="date" required> 
+      <input id="time" style="margin-top:10px" type="time" required> 
+      <div class="btn"><button class="go">Go</button></div>
+    </div>
+  </div>
+  
+
+  <div class="show">
+    <div class="Title">
+      <span id="Title"></span>
+    </div>
+    <div class="Detail">
+      <span id="Detail"></span>
+    </div>
+    <div class="remTime">
+
+      <div class="days">
+        <span id="remDays"></span>
+        <h3 class="hdays">Days</h3>
+      </div>
+      <div class="hours">
+        <span id="remHrs"></span>
+        <h3 class="hhrs">Hours</h3>
+      </div>
+      <div class="mins">
+        <span id="remMins"></span>
+        <h3 class="hmins">Minutes</h3>
+      </div>
+      <div class="sec">
+        <span id="remSecs"></span>
+        <h3 class="hsecs">Seconds</h3>
+      </div>
+
+    </div>
+
+  </div>
+  <div class="icon">
+    <i class="fa fa-github"></i>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
