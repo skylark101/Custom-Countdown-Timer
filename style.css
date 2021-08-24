@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Ubuntu', sans-serif;
+  box-sizing: border-box;
+}
+
+.container{
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  animation: 40s infinite ease-in-out animate;
+}
+ 
+@keyframes animate{
+  0%,100%{
+    background-image:url('Images/one.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  10%{
+    background-image:url('Images/two.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  20%{
+    background-image:url('Images/three.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  30%{
+    background-image:url('Images/four.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  40%{
+    background-image:url('Images/five.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  50%{
+    background-image:url('Images/six.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  60%{
+    background-image:url('Images/seven.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  70%{
+    background-image:url('Images/eight.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  80%{
+    background-image:url('Images/nine.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  90%{
+    background-image:url('Images/ten.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+.outer{
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.basicInfo{
+  position:absolute;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+}
+.basicInfo h1{
+  width: 100%;
+}
+.detail,.time{
+  position: absolute;
+  top: 0;
+  visibility: hidden;
+}
+#title,#detail{
+  padding: 2%;
+  border-radius: 10px;
+  outline: none;
+  width: 100%;
+  font-size: 1.2rem;
+}
+.get,.set,.go{
+  padding: 5px;
+  margin-top: 10px;
+  font-weight: bolder;
+  font-size: 1.1rem;
+  width: 100px;
+  border-radius: 10px;
+  cursor: pointer;
+  backdrop-filter: blur(6px);
+  background: none;
+}
+#date,#time{
+  padding: 2%;
+  border-radius: 10px;
+  outline: none;
+  width: 50%;
+  font-size: 1.2rem;
+}
+
+
+.show{
+  visibility: hidden;
+  position: absolute;
+  top: 50%;
+  
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.Title,.Detail{
+  font-size: 2.5rem;
+  text-align: center;
+  justify-content: center;
+  width: 100%;
+}
+.Title{
+  margin-bottom: 2%;
+}
+.Detail{
+  margin-bottom: 5%;
+
+}
+.remTime{
+  display: flex;
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+  gap: 10%;
+}
+.remTime span{
+  font-size: 4rem;
+  font-weight: 800;
+}
+
+.icon{
+  position: absolute;
+  right:2%;
+  bottom:2%;
+  font-size: 2rem;
+}
+.icon a{
+  text-decoration: none;
+  color:black;
+  cursor: pointer;
+}
+
+
+
+/*--------------------------RESPONSIVENESS------------------------*/
+
+
+@media only screen and (max-width:750px){
+  .remTime{
+    flex-wrap: wrap;
+  }
+  #date,#time{
+    width: 170px;
+  }
+}
