@@ -1,6 +1,6 @@
 
 
-let title,detail,date,time,dt,month,yr,hrs,mins;
+let title,detail,date,time,dt,month,yr,hrs,mins,myInt;
 
 document.querySelector('.get').addEventListener('click',function(){
 
@@ -117,6 +117,17 @@ document.querySelector('.go').addEventListener('click',function(){
      document.getElementById('remHrs').innerHTML = hours;
      document.getElementById('remMins').innerHTML = minutes;
      document.getElementById('remSecs').innerHTML = seconds;
+
+     if (hours == "00" && minutes == "00" && days == "00" && seconds == "00"){
+      clearInterval(myInt);
+      alert("The time for this task is up!!");
+      document.querySelector('.new').classList.toggle('invisible');
+      
+     }
  }
 
- setInterval(calculate,1000);
+  myInt = setInterval(calculate,1000);
+
+  document.querySelector('.new').addEventListener('click',()=>{
+    document.querySelector('.new').classList.toggle('invisible');
+  });
