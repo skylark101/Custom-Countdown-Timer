@@ -70,7 +70,7 @@
   position: absolute;
   width: 100%;
   height: 100vh;
-  background: rgba(0, 0, 0, 0.2);
+  background: rgba(0, 0, 0, 0.5);
 }
 
 .basicInfo{
@@ -95,7 +95,7 @@
   width: 100%;
   font-size: 1.2rem;
 }
-.get,.set,.go{
+.get,.set,.go,.new button{
   padding: 5px;
   margin-top: 10px;
   font-weight: bolder;
@@ -148,6 +148,18 @@
   font-weight: 800;
 }
 
+.new{
+  position: absolute;
+  top: 70%;
+  width: 100%;
+  text-align: center;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.new button{
+  width: 180px;
+}
+
 .icon{
   position: absolute;
   right:2%;
@@ -159,7 +171,9 @@
   color:black;
   cursor: pointer;
 }
-
+.invisible{
+  visibility: hidden;
+}
 
 
 /*--------------------------RESPONSIVENESS------------------------*/
@@ -172,4 +186,8 @@
   #date,#time{
     width: 170px;
   }
+  #title,#detail{
+    font-size: 0.85rem;
+  }
+ 
 }
